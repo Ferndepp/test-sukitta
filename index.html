@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script>
+    <style>
+        .carousel {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .carousel-container {
+            display:
+                flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-content {
+            flex:
+                0 0 100%;
+            max-width: 100%;
+        }
+
+        @media (max-width: 640px) {
+            .carousel {
+                flex-direction:
+                    column;
+            }
+
+            .carousel-content {
+                width: 100%;
+            }
+        }
+
+        html,
+        body {
+            overflow-x:
+                hidden;
+        }
+
+        .swiper-pagination-bullet {
+            background-color: #8B5CF6;
+        }
+
+        .custom-padding-x {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        body {
+            max-width: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full h-100vh">
+        <div class="block sm:hidden ">
+            <text class="text-6xl text-gray-200"> ATHLETS </text>
+        </div>
+        <img class="md:absolute transition-transform md:left-[-180px]  lg:left-20 mt-10" style="height: 650px; object-fit: cover" src="./image/athlets.png" alt="Athlete">
+        <div class="hidden md:block">
+            <!-- row 1 -->
+            <div class="bg-white  ">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative py-10 lg:mr-40 md:mr-20">
+                    <div>
+                    </div>
+                    <div>
+                        <div class="block sm:hidden">
+                            <text class="text-6xl text-gray-200"> ATHLETS </text>
+                        </div>
+                        <div class="hidden md:block">
+                            <text class="text-6xl text-gray-200"> ATHLETS </text>
+                        </div>
+                        </br>
+                        <div class="flex gap-3">
+                            <text class="border-b-2 border-purple-500 text-md"> 01 </text>
+                            <text class="text-gray-300 text-2xl"> CONNECTION </text>
+                        </div>
+                        <div class="mt-5">
+                            <text class="text-md"> Connect with coaches directly, you can ping coaches to view profile. </text>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="bg-violet-50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 lg:mr-40 md:mr-20">
+                        <div>
+                        </div>
+                        <div>
+                            <div class="flex gap-3">
+                                <text class="border-b-2 border-purple-500 text-md"> 02 </text>
+                                <text class="text-gray-300 text-2xl"> COLLABORATION </text>
+                            </div>
+                            <div class="mt-5">
+                                <text class="text-md"> Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1. </text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 3 -->
+                <div class="bg-violet-700">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 lg:mr-40 md:mr-20">
+                        <div>
+                        </div>
+                        <div>
+                            </br>
+                            <div class="flex gap-3">
+                                <text class="border-b-2 border-white text-md"> 03 </text>
+                                <text class="text-gray-300 text-2xl"> GROWTH </text>
+                            </div>
+                            <div class="mt-5">
+                                <text class="text-md text-white"> Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc </text>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative py-10 mx-10">
+                            <div>
+                            </div>
+                            <div>
+                                <div class="hidden md:block">
+                                    <text class="text-6xl text-gray-200"> ATHLETS </text>
+                                </div>
+                                </br>
+                                <div class="flex gap-3">
+                                    <text class="border-b-2 border-purple-500 text-md"> 01 </text>
+                                    <text class="text-gray-300 text-2xl"> CONNECTION </text>
+                                </div>
+                                <div class="mt-5">
+                                    <text class="text-md"> Connect with coaches directly, you can ping coaches to view profile. </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-violet-50">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 mx-10">
+                            <div>
+                            </div>
+                            <div>
+                                </br>
+                                <div class="flex gap-3">
+                                    <text class="border-b-2 border-purple-500 text-md"> 02 </text>
+                                    <text class="text-gray-300 text-2xl"> COLLABORATION </text>
+                                </div>
+                                <div class="mt-5">
+                                    <text class="text-md"> Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1. </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-violet-700">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 mx-10">
+                            <div>
+                            </div>
+                            <div>
+                                </br>
+                                <div class="flex gap-3">
+                                    <text class="border-b-2 border-purple-500 text-md"> 03 </text>
+                                    <text class="text-gray-300 text-2xl"> GROWTH </text>
+                                </div>
+                                <div class="mt-5">
+                                    <text class="text-md text-white"> Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination relative">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="block sm:hidden ">
+                <text class="text-6xl text-gray-200"> PLAYERS </text>
+            </div>
+            <img class="md:absolute transition-transform md:right-[-180px] lg:right-20  mt-10" style="height: 515px; object-fit: cover" src="./image/graphic.png" alt="Athlete">
+            <div class="hidden md:block">
+                <!-- row 4 -->
+                <div class="bg-white">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 relative py-10  lg:ml-40 md:ml-20">
+                        <div>
+                            <div class="hidden sm:block mt-20">
+                                <text class="text-6xl text-gray-200 "> PLAYERS </text>
+                            </div>
+                            </br>
+                            <div class="flex gap-3">
+                                <text class="border-b-2 border-purple-500 text-md"> 01 </text>
+                                <text class="text-gray-300 text-2xl"> CONNECTION </text>
+                            </div>
+                            <div class="mt-5">
+                                <text class="text-md "> Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface </text>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 5 -->
+                <div class="bg-violet-50">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 lg:ml-40 md:ml-20">
+                        <div>
+                            </br>
+                            <div class="flex gap-3">
+                                <text class="border-b-2 border-purple-500 text-md"> 02 </text>
+                                <text class="text-gray-300 text-2xl"> COLLABORATION </text>
+                            </div>
+                            <div class="mt-5">
+                                <text class="text-md "> Work with recruiter to increase your chances of finding talented athlete. </text>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 6 -->
+                <div class="bg-indigo-950">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 lg:ml-40 md:ml-20">
+                        <div>
+                            </br>
+                            <div class="flex gap-3">
+                                <text class="border-b-2 border-purple-500 text-md border-white text-violet-700"> 03 </text>
+                                <text class="text-gray-300 text-2xl"> GROWTH </text>
+                            </div>
+                            <div class="mt-5">
+                                <text class="text-md text-white"> Save your time, recruit proper athlets for your team. </text>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sm:hidden ">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-white">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 mx-10">
+                            <div>
+                            </div>
+                            <div>
+                                <div class="hidden md:block">
+                                    <text class="text-6xl text-gray-200"> PLAYERS </text>
+                                </div>
+                                </br>
+                                <div class="flex gap-3">
+                                    <text class="border-b-2 border-purple-500 text-md"> 01 </text>
+                                    <text class="text-gray-300 text-2xl"> CONNECTION </text>
+                                </div>
+                                <div class="mt-5">
+                                    <text class="text-md"> Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-violet-50">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 mx-10">
+                            <div>
+                            </div>
+                            <div>
+                                </br>
+                                <div class="flex gap-3">
+                                    <text class="border-b-2 border-purple-500 text-md"> 02 </text>
+                                    <text class="text-gray-300 text-2xl"> COLLABORATION </text>
+                                </div>
+                                <div class="mt-5">
+                                    <text class="text-md "> Work with recruiter to increase your chances of finding talented athlete. </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-indigo-950">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-10 mx-10">
+                            <div>
+                            </div>
+                            <div>
+                                </br>
+                                <div class="flex gap-3">
+                                    <text class="border-b-2 border-purple-500 text-md border-white text-violet-700"> 03 </text>
+                                    <text class="text-gray-300 text-2xl"> GROWTH </text>
+                                </div>
+                                <div class="mt-5">
+                                    <text class="text-md text-white"> Save your time, recruit proper athlets for your team. </text>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination relative ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
